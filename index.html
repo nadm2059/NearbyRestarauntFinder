@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nearby Restaurant Finder</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>Nearby Restaurant Finder w/Google Maps</h1>
+
+  <div class="search-container">
+    <label for="location-input">Enter a location:</label>
+    <input type="text" id="location-input" placeholder="Enter a location" />
+    <button onclick="searchLocation()">Search</button>
+
+  </div>
+
+  <div id="map"></div>
+  <ul id="results"></ul>
+
+  <!-- Google Maps script with callback to initMap -->
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD1qJAyKWHOOHpHFW5IBxjw8CHGkwHm_oE&libraries=places&callback=initMap&loading=async"
+    async
+    defer
+  ></script>
+
+  <!-- Your JS must be loaded AFTER Maps API is initialized -->
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+/* Base styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    background: linear-gradient(135deg, #e0f7fa, #fff);
+    color: #333;
+}
+
+/* Headings */
+h1 {
+    margin: 20px 0;
+    color: #0d47a1;
+    font-size: 2.5rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Search box container */
+.search-container {
+    margin-bottom: 20px;
+    background-color: #ffffffcc;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    display: inline-block;
+}
+
+/* Input box */
+#location input {
+    width: 300px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+#location input:focus {
+    border-color: #2196f3;
+}
+
+/* Buttons */
+button {
+    padding: 10px 16px;
+    background-color: #2196f3;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    margin-left: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #1976d2;
+    transform: scale(1.05);
+}
+
+/* Map container */
+#map {
+    height: 400px;
+    width: 90%;
+    margin: 20px auto;
+    border: 2px solid #90caf9;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Results list */
+#results {
+    list-style: none;
+    padding: 0;
+    width: 90%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+/* Result items */
+.result-item {
+    background-color: #ffffff;
+    margin: 8px 0;
+    padding: 12px;
+    border-left: 5px solid #2196f3;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.result-item:hover {
+    background-color: #e3f2fd;
+    transform: translateX(4px);
+}
